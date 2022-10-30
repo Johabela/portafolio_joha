@@ -1,6 +1,13 @@
-# Portafolio Joha
-
 # Joha's Portafolio 
 
-Trying to commit and push to github. I've been having some troubles
-I dont know if git and github are connected. 
+
+- Home
+
+- About
+
+- Contact  
+
+- Blog 
+
+
+I will be creating the estructure of my portafolio, starting for the home page working on the header in html and css. 

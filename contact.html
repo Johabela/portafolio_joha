@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio_Joha</title>
+    <link rel="shortcut icon" type="img/png" href="img/logo.png"> 
+    <link rel="stylesheet" type="text/css" href="css.css/style.css">
+    <style>
+
+        body {
+        background-color: white;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-control{
+            width: 600px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+            color: lightgrey;
+            font-size: 16px;
+        }
+
+        input{
+            height: 30px;
+        }
+        form .submit{
+            background: lightgrey;
+            border-color: transparent;
+            color: #937A8F;
+            font-size: 20px;
+            height: 40px;
+            margin-top: 20px;
+        }
+        
+        form .submit:hover{
+            background-color: #937A8F;
+            cursor: pointer;
+            color: black;
+
+        }
+
+     
+    
+        
+    </style>
+</head>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <a href="/index.html"><img id="logo" src="img/logo.png"></a>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                </ul>
+            </nav> 
+        </header>
+
+        <main>
+            <h4>contact</h4>
+            
+            <div class="cotact-form">
+                <form id="contact-form" method="post" action="">
+                    <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+                    <input name="email" type="email" class="form-control" placeholder="Your email" required><br>
+
+                    <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+                    <input type="submit" class="form-control submit" value="SEND">
+                </form>
+            </div>
+            
+        </main>
+   
+    </body>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright © 2022 Johabela</p>
+        </div>
+    </footer>
+
+</html>

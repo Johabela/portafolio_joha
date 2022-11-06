@@ -1,15 +1,89 @@
+/* Variables */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    background-color: black;
+h1 {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    float: inherit;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    padding-top: 20px;
+    margin-left: 20px;
 }
+
+h2 { 
+    color: #937A8F;
+    float:initial;
+    font-size: 14px;
+    margin-left: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h3 {
+    color: #EA2E5B;
+    float: initial;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding: auto;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;  
+}
+    
+h4 { 
+    color: #937A8F;
+    font-size: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 20px;
+}
+    
+h5 {
+   font-size: 8px;
+   color: black;
+   font-family: 'Inconsolata', monospace;
+   font-family: 'Kanit', sans-serif;
+   font-family: 'Roboto Mono', monospace;
+   margin-left: 20px;
+}
+    
+h6 { 
+    color: #937A8F;
+    font-size: solid 8px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 0%;
+}
+    
+h7 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 20px;
+    font-size: 6px;
+    float: right;
+    }
+
+p {
+    margin: 20px;
+    font-size: 8px;
+    color: black;
+    background-color: lightgray;
+    opacity: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace; 
+}
+ 
+
+/* General Header */
 
 header a {
     text-decoration: none;
@@ -17,39 +91,46 @@ header a {
 }
 
 header {
-    padding: 0 20px;
     background-color: white;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
+    height: 70px;
 }
 
+header ::after {
+    content: **;
+    display: table;
+    clear: both;
+}
 
-#logo {
-    display: flex;
-    align-items:flex-start;
+.logo {
+    float: left;
     height: 30px;
-
+    margin-top: 10px;
+    margin-left: 10px;
 }
-
+nav {
+    background-color: white;
+    float: right;
+    height: 20px;
+    margin: 10px;
+}
 
 ul {
     list-style: none;
-    height: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
 }
 
-
 ul a{
     color: #937A8F;
-  
 }
 
 ul li{
-    padding: 5px;
-    margin-left: 10px;
+    margin-left: 20px;
+    font-size: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;  
 }
 
 ul li:hover {
@@ -57,65 +138,192 @@ ul li:hover {
     transition: 10px;
 }
 
-h1, h2 {
-    color: white;
-    float: inherit;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 10%;
-    }
+/* Internal Pages Footer and Body Color */
 
-h3 { 
-    color: #937A8F;
-    float:initial;
-    font-size: 20px;
-    }
-h4 {
-    color: black;
-    float: initial;
-    font-size: 18px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.text-footer {
+    padding: none;
+    color: white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+ }
+
+.text-footer-home {
+    padding: none;
+    color:  white;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
 }
 
- .me {
-    opacity: 50%;
-    float: center;    
-    }
 
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10%;
-    }
-
-footer {
-    position: absolute;
+.footer-content {
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: lightgray;
+    background-color:black;
     height: auto;
 }
 
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+body {
+    background-color: white;
     color: black;
 }
 
-    /* Tablet style */
-@media screen and (min-widht: 700px) {
+/* HOME styling */
 
+.me {
+    opacity: 60%;
+    float: center; 
+    padding: 20px; 
+    border-radius: 20px;
+    display: block;
+    margin-left: 20px;
+}
+
+.myphoto {
+     width: 150px; 
+     height: 280px; 
+}
+
+/* ABOUT */  
+
+main {
+    /* margin-bottom: 20px; */
+    margin-top: 20px solid black;
+ }
+
+ .about-container {
+    margin-left: 50px;
+}
+
+/* CONTACT FORM */  
+
+.contact-form {
+    background-color: lightgray;
+    margin: 10px;
+}
+
+.form-control{
+    width: 170px;
+    background: lightgrey;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 3px;
+    color: black;
+    font-size: 10px;
+    margin: 15px;
+}
+
+input{
+    height: 10px;
+}
+form .submit{
+    background: #937a8f;
+    border-color: transparent;
+    color: black;
+    font-size: 10px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+form .submit:hover{
+    background-color: #EA2E5B;
+    cursor: pointer;
+    color: white;
 
 }
+
+.about-container-contact {
+    margin-left: 20px;
+}
+
+
+/* BLOG */  
+      
+.article-card {
+    display: flex;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: lightgrey;
+    margin: 10px;
+    
+ }
+
+ .article_img {
+    margin-top: 10px;
+    margin-left: 10px;
+
+ }
+
+ .article_body {
+    margin-left: 5px;
+    margin-top: 10px;
+ }
+ .article-date {
+    margin: auto;
+ }
+
+/* PROYECT */ 
+
+ .in-progress {
+    width: 200px;
+    height: 160px;
+    display: block;
+    border-radius: 20px;
+    margin-left: 20px;
+    }
+
 
 
   /* Desktop style */
-  @media screen and (min-widht: 1100px) {
+  /* @media screen and (min-widht: 1100px) { */
+
+@media only screen and (min-width: 601px)  {
+    
+.myphoto {
+    width: 500px; 
+    height: 280px; 
+
+  }
+}
+
+    /* Tablet style */
+    @media screen and (min-widht: 700px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+    
+
+
+
+
+
+
+
+
+
 
 }
+
+
+

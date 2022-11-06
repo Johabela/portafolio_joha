@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Kanit&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    
     <title>Portafolio_Joha</title>
     <link rel="shortcut icon" type="img/png" href="img/logo.png"> 
     <link rel="stylesheet" type="text/css" href="css.css/style.css">
 
-    <style>
-
-        body {
-        background-color: white;
-        color: black;
-        font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
-    
 </head>
     <body>
-
         <header>
+            <div class="container-nav">        
+            <a href="/index.html"><img class="logo" src="img/logo.png"></a>
             <nav>
-                <ul>
-                    <a href="/index.html"><img id="logo" src="img/logo.png"></a>
+    
+                <ul>   
                     <li><a href="about.html">about</a></li>
+                    <li><a href="projects.html">projects </a></li>
                     <li><a href="contact.html">contact</a></li>
                     <li><a href="blog.html">blog</a></li>
                 </ul>
             </nav> 
-        </header>
+        </div>
 
+        </header>
         <main>
 
-            <h4>about</h4>
-            <br> <br>
+            <h3>about</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            <ul>
-                <li>Download my cv</li>
-                <br><br>
-            </ul>
-            <h3>Main Skills</h3>
+            <div class="about-container">
+                <!-- <a href="#" download="https://drive.google.com/file/d/1dRJCrTCdks3C9eQ8rViolFtQ3KDHTQ_L/view?usp=share_link">Download my cv</a> -->
+                <button onclick="location.href='desktop/cv.pdf';">Downloadable PDF CV</button>
+                <br></br>
+                <a href="https://github.com/Johabela"><img src="img/github.png" alt="github" width="25px" height="25px"></a>
+                <a href="https://www.linkedin.com/in/johanna-hernandez-a7394627"><img src="img/Linkedin.png" alt="Linkedin" width="25px" height="25px"></a>            
+            </div>
+            <h4> <bold> Main Skills</bold></h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Phasellus congue velit et orci aliquam convallis.
@@ -49,8 +53,7 @@
                 Aliquam ultricies libero quis facilisis euismod.
                 Sed eu velit id nisi bibendum pulvinar at vitae sem.
             </p>
-            <br></br>
-            <h3>Experience</h3>
+            <h4>Experience</h4>
             <p>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -62,12 +65,12 @@
             </p>
         </main>
    
-    </body>
+   
 
     <footer>
-        <div class="footer-content">
-            <p>Copyright © 2022 Johabela</p>
-        </div>
+            <div class="footer-content">
+                <p class="text-footer">Copyright © 2022 Johabela</p>
+            </div>
     </footer>
-
+    </body>
 </html>

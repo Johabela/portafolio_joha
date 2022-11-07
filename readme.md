@@ -2,7 +2,14 @@
 
 ## Description
 
-This portafolio is a proyect website to show my skills/abilities and learning procces and development on the application of the diferent coding and programming lenguages. 
+This portfolio is a project website to show my skills/abilities and learning process and development on the application of the different coding and programming languages. 
+
+My target audience is future employer looking for a web developer.
+
+
+## SITEMAP
+
+![](img/sitemap.png)
 
 The website will start with the follwing four seccions, features and content:
 
@@ -22,11 +29,24 @@ The website will start with the follwing four seccions, features and content:
      - Five articles - tech releated, each article with thier page
 
 
-## SITEMAP
-
-![](img/sitemap.png)
 
 ## Mobile Version done
-Structure and styling Mobile Version of my portfolio is done. 
-Pending to work on the code for the Downloadable PDF CV button. 
+Esqueleton and styling Mobile Version of my portfolioal is done, looking close to the mockups. 
+
+- Mobile View Mockups 
+
+![](img/Mobile%20View%20Mockup%20.png)
+
+- Mobile View Portfolio 
+
+![](img/Mobile%20Portafolio%20View%201.png)
+
+![](img/Mobile%20Portafolio%20View%202.png)
+
+
+Pending:
+
+* Work on the code for the Downloadable PDF CV button. 
+
+* View on Desktop and tablet 
 

@@ -35,7 +35,7 @@ Esqueleton and styling Mobile Version of my portfolioal is done, looking close t
 
 - Mobile View Mockups 
 
-![](img/Mobile%20View%20Mockup%20.png)
+![](img/sitemap.png)
 
 - Mobile View Portfolio 
 
@@ -44,9 +44,22 @@ Esqueleton and styling Mobile Version of my portfolioal is done, looking close t
 ![](img/Mobile%20Portafolio%20View%202.png)
 
 
+
+## Resize Mobile View
+
+I realised the sice view i had with the browser was to small so i had to make the content a little bit bigger. 
+
+## Desktop View 
+
+Content was rearranged, fonts needed to look bigger.
+
+
+### * Downloadable PDF CV button DONE! 
+
+
 Pending:
 
-* Work on the code for the Downloadable PDF CV button. 
+* Desktop blog-article, rearrange the text . 
 
-* View on Desktop and tablet 
+* View on table 
 

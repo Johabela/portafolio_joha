@@ -18,9 +18,13 @@
 
 </head>
     <body>
+
+        <!--///////////////--------- Graphical component #1, Logo , it's reused across the site -------///////////////    -->
         <header>
             <div class="container-nav">        
             <a href="/index.html"><img class="logo" src="img/logo.png"></a>
+
+         <!--///////////////--------- Text component #1, Navegation Bar -  it's used across the site -------///////////////    -->
             <nav>
     
                 <ul>   
@@ -35,34 +39,37 @@
         </header>
         <main>
             <h3>contact</h3>
-            <div class="wrapper-contact">
+            <div class="wrapper-contact" style="display: ;flex">
 
+        <!--///////////////--------- Text & Graphical component #2, Contact Form -------///////////////    -->
              <div class="contact-form">
+
                 <form id="contact-form" method="post" action="">
                     <input name="name" type="text" class="form-control" placeholder="Name"  required><br>
-
                     <input name="email" type="email" class="form-control" placeholder="Email" required><br>
-
                     <textarea name="message" class="form-control" placeholder="Message" rows="4"  required></textarea><br>
-
                     <input type="submit" class="form-control submit" value="SEND" width="20px" height="20px">
                 </form>
              </div>
             
              <div class="box-contact">
-              <h4>Get in touch</h4>
-              <h5>johabbela@gmail.com</h5>
-              <br></br>
-              <h4>Based in</h4>
-              <h5>Sydney Australia</h5>
-              <br></br>
+
+        <!--///////////////--------- Text component #5, Email link - mailto attibute -------///////////////    -->
+                <h4>Get in touch </h4>
+                <a class="email" href="mailto:johabbela@gmail.com"> johabbela@gmail.com</a>
+                <br></br> 
+                <h4>Based in</h4>
+                <h5>Sydney Australia</h5>
+                <br></br> 
+                <div class="about-container-contact">
+                  <a href="https://github.com/Johabela"><img src="img/github.png" class="github" alt="github"></a>
+                  <a href="https://www.linkedin.com/in/johanna-hernandez-a7394627"><img src="img/Linkedin.png" class="linkedin" alt="Linkedin"></a>            
+                </div>
              </div>
-             
-             <div class="about-container-contact">
-                <a href="https://github.com/Johabela"><img src="img/github.png" class="github" alt="github"></a>
-                <a href="https://www.linkedin.com/in/johanna-hernandez-a7394627"><img src="img/Linkedin.png" class="linkedin" alt="Linkedin"></a>            
-             </div>
-           </div>
+
+            </div>
+
+          
         </main>
    
     </body>

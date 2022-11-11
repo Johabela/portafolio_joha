@@ -47,7 +47,8 @@ h4 {
     
 h5 {
    font-size: 10px;
-   color: black;
+   font-style: italic;
+   color: darkgray;
    font-family: 'Inconsolata', monospace;
    font-family: 'Kanit', sans-serif;
    font-family: 'Roboto Mono', monospace;
@@ -63,13 +64,7 @@ h6 {
     margin-left: 0%;
 }
 
-h7 {
-    color: black;
-    font-family: 'Courier New', Courier, monospace ;
-    margin-right: 20px;
-    font-size: 10px;
-    float: right;
-}   
+ 
 
 p {
     margin: 20px;
@@ -101,12 +96,15 @@ header ::after {
     clear: both;
 }
 
+/* ////////-------------  Graphical component #1, -Logo  ------------ //////// */
 .logo {
     float: left;
     height: 30px;
     margin-top: 10px;
     margin-left: 10px;
 }
+
+/* ////////---------------  Text component #1, Navegation Bar ------------ //////// */
 nav {
     background-color: white;
     float: right;
@@ -140,7 +138,24 @@ ul li:hover {
 }
 
 
-/* //////.......Pages Footer and Body Color -  Mobile View .......///// */
+/* //////...................Pages Footer and Body Color -  Mobile View .......///// */
+        
+.footer-content-home {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: auto;
+}
+.text-footer-home {
+    padding: none;
+    color:  black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-size: 10px;
+}
 
 .text-footer {
     padding: none;
@@ -150,7 +165,6 @@ ul li:hover {
     display: flex;
     justify-content: center;
     background-color: black;
-    
 
  }
 
@@ -171,11 +185,6 @@ body {
 
 /* /////////............Home  - Mobile View .........///////////// */
 
-/* .wrapper{
-    display: flex;
-
-} */
-
 .text {
     margin-left: 65px;
     margin-top: 20px;
@@ -193,17 +202,12 @@ body {
      opacity: 80%;
 }
 
-/* ////////........About -  Mobile View............//////////////*/
+/* ////////.......................About -  Mobile View............//////////////*/
 
-main {
-    /* margin-bottom: 20px; */
-    margin-top: 20px solid black;
- }
-
+/* <//////////////--------- Graphical Component #3 - GitHub and LinkedIn icons  -------///////// --> */
  .about-container {
     margin-left: 20px;
 }
-
 .linkedin {
     width: 25px;
     height: 25px;
@@ -214,7 +218,10 @@ main {
     height: 25px;
 
 }
+
 /* ////////........Contact - Mobile View ............//////////////*/
+
+/* <!--///////////////--------- Text & Graphical component #2, Contact Form -------///////////////    --> */
 
 .contact-form {
     background-color: lightgray;
@@ -222,7 +229,6 @@ main {
     height: 280px;
     width: 200px;
     margin-left: 20px;
-  
 }
 
 .form-control{
@@ -240,6 +246,7 @@ main {
 input{
     height: 10px;
 }
+
 form .submit{
     background: #937a8f;
     border-color: transparent;
@@ -260,6 +267,10 @@ form .submit:hover{
   
 }
 
+.box-contact{
+    margin-top: 20px 
+}
+
 .linkedin {
     width: 30px;
     height: 30px;
@@ -270,8 +281,27 @@ form .submit:hover{
     height: 30px;
 }
 
+.email {
+    color: black;
+    font-size: 10px; 
+    color: darkgray;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 20px;
+
+}
+
 /* ////////........Blog - Mobile View............//////////////*/
+
+/* <!-- <//////////////--------- Graphical and text Component #4 - Five Article Cards with their images, each image linked to a sigle article page ---------///////// --> */
       
+.block-container_article{ 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
 .article-card {
     display: flex;
     width: auto;
@@ -281,6 +311,7 @@ form .submit:hover{
     margin: 10px;
     
  }
+ 
 
  .article_body {
     margin-left: 5px;
@@ -302,15 +333,47 @@ form .submit:hover{
    
  }
 
+
+/* ////////........Article Blog Section -  Mobile View............///////////*/
+
+ .container {
+    display: flex;
+    justify-items: center;
+
+ }
+
+ .article-card-in {
+    display: flex;
+    justify-items: center;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: lightgrey;
+    margin: 10px;
+    
+ }
+.photo_in{
+    width: 180px;
+    height: 160px;
+    border-radius:  20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 20px;
+
+}
+ .article_body {
+    margin-left: 5px;
+    margin-top: 10px;
+ }
+
  .article-date {
     margin: auto;
  }
-/* ////////........Article Blog Section -  Mobile View............///////////*/
 
-.photo{
-    width: 180px;
-    height: 160px;
-    border-radius: 20px;
+ .text-article_in{ 
+    font-size: 15px;
  }
 
 /* ////////........Project  Mobile View............//////////////*/
@@ -325,41 +388,51 @@ form .submit:hover{
 
 
 
+   /* /////// -------  Desktop View -------/////////*/
 
-@media only screen and (min-width: 601px)  {
+@media  (min-device-width: 1200px) and (max-device-width: 1600px) {
+
 
    /* /////// ------- Variable - Desktop View -------/////////*/
-
 h1 {
     font-size: clamp(18px, 500px, 34px);
   }
 
 h2 {
-    font-size: clamp(14px, 500px, 20px);
+    font-size: clamp(14px, 500px, 26px);
   }
 
 h3 {
-    font-size: clamp(15px, 500px, 25px);
+    font-size: clamp(15px, 500px, 30px);
+    margin-left: 130px;
  }
 
 h4 { 
     font-size: clamp(10px, 500px, 20px);
+    margin-left: 100px;
  }
 
 h5 { 
-    font-size: clamp(8px, 500px, 12px);
+    font-size: clamp(8px, 500px, 18px);
  }
+
+p {
+    font-size: clamp(12px, 500px, 20px);
+}
+ 
 .text{
     margin-top: 60px;
  }
-.text-footer-home{
 
-    font-size: clamp(10px, 500px, 18px);
+.text-footer-home{
+    font-size: (10px, 500px, 20px)
 }
+
 .text-footer{
-    font-size: clamp(10px, 500px, 10px);
+    font-size: clamp(10px, 500px, 20px);
 }
-/* /////// ------- Header - Desktop View -------/////////*/
+
+/* /////// ------- Header - Nav Bar and Logo - Desktop View -------/////////*/
 
 .logo {
         float: left;
@@ -371,7 +444,7 @@ h5 {
 
 ul li{
         margin-left: 20px;
-        font-size: 25px;
+        font-size: 27px;
         display: flex;
         justify-content: space-around;
         align-content: right;
@@ -382,8 +455,8 @@ ul li{
 /* //////------ Home - Desktop View -----//////// */ 
 
 .myphoto {
-    width: 280px; 
-    height: 450px;
+    width: 300px; 
+    height: 500px;
     border-radius: 20px;
     }
 
@@ -408,15 +481,14 @@ ul li{
 }
 
 
-
  /* ///------About - Projects - Desktop View --------////// */
-
-
 
 .contenttext {
     padding: 25px;
     margin-left: 100px;
+    margin-top: auto;
     font-size: clamp(8px, 500px, 18px)
+    
 }
 
 .about-container{
@@ -434,12 +506,11 @@ ul li{
 }
 
 .in-progress {
-    width: 600px;
-    height: 420px;
-}
-
-h4 {
-    margin-left: 100px;
+    width: 800px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
@@ -447,7 +518,7 @@ h4 {
 
 .contact-form {
     width: 500px;
-    height: 200px;
+    height: auto;
     margin-left:  40px;
 }
 .form-control{
@@ -466,13 +537,13 @@ form .submit{
 .box-contact {
     margin-top: none;
     text-align: end;
-    margin-left: auto;
-    padding-left: 40px;
+    margin-right: 50px;
 }
-.about-container-contact{
-    margin-top: none;
-    text-align: end;
-    margin-left: 40px;
+
+
+.email {
+    font-size: clamp(10px, 500px, 18px);
+
 }
 .imgart {
     width: 180px;
@@ -480,17 +551,13 @@ form .submit{
     border-radius: 20px;
  }
 
-.wrapper.contact{
-    display: flex;
-    justify-content: space-around;   
-}
-
 /* ///////------ Blog Section - Desktop View -----//////// */
 
-.block-container{ 
+.block-container_article { 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }   
 .article_body {
     margin: 10px;
@@ -500,40 +567,40 @@ form .submit{
  .article-card {
     display:flex;
     justify-items: auto;
-    height: 150px;
+    height: 200px;
     width: 400px;
  }
 
  /* ///////// Blog Article Section Descktop View /////// */
 
-     
- .article-card-section {
+.block-container{
+    background-color: white;
+    padding: 50px;
+}
+ .article-card_in {
     background-color: white;  
+    margin-top: auto;
+    margin-bottom: auto;
  }
-
- .photo {
+ .photo_in{
+    width: 380px;
     height: 300px;
-    width: 400px;
-    margin-left: 100px;
     float: left;
-    padding: 10px;
-    border: solid grey 2px;
-   
+    margin: 10px;
+    
 }
 
- .article_body-section {
-    display: flex;
-    justify-content: end;
-    margin-right: 200px;
- }
+.text-article_in{
+    font-size: clamp(15px, 500px, 25px)
+}
 
-  .article1-main-p {
-    background-color: white;
-  }
- 
+
+
+
+
  .imgart {
-    width: 100px;
-    height: 80px;
+    width: 200px;
+    height: 160px;
     border-radius: 20px;
    
  }
@@ -542,32 +609,232 @@ form .submit{
     margin: auto;
  }
 
+}
 
+/*//////----- Tablet  View -------- ///////*/
+    
+@media only screen and (min-device-width: 768px){
 
+   /* /////// ------- Variable - Tablet View -------/////////*/
+
+h1 {
+    font-size: clamp(18px, 500px, 34px);
+  }
+
+h2 {
+    font-size: clamp(14px, 500px, 26px);
+  }
+
+h3 {
+    font-size: clamp(15px, 500px, 30px);
+    margin-left: 130px;
+ }
+
+h4 { 
+    font-size: clamp(10px, 500px, 20px);
+    margin-left: 100px;
+
+ }
+
+h5 { 
+    font-size: clamp(8px, 500px, 18px);
+
+ }
+
+p {
+    font-size: clamp(12px, 500px, 20px);
 
 }
 
+.text{
+    margin-top: 60px;
+ }
 
+ .footer-content-home {
+    font-size: clamp(10px, 500px, 20px);
+ }
 
-    /* Tablet style */
-    @media screen and (min-widht: 700px) {
+.text-footer-home{
+    font-size: clamp(10px, 500px, 20px);
+}
+.text-footer{
+    font-size: clamp(10px, 500px, 20px);
+}
+/* /////// ------- Header - Nav Bar and Logo - Tablet View -------/////////*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.logo {
+        float: left;
+        height: 50px;
+        width: 200px;
+        margin-top: 15px;
+        margin-left: 20px;
     }
+
+ul li{
+        margin-left: 20px;
+        font-size: 27px;
+        display: flex;
+        justify-content: space-around;
+        align-content: right;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+
+/* //////------ Home - Desktop View -----//////// */ 
+
+.myphoto {
+    width: 300px; 
+    height: 500px;
+    border-radius: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    text-align: end;
+    margin-top: 80px;
     
-    
+}  
+  
+.me {
+    opacity: 60%;
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+    align-content: right;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+ /* ///------About - Projects - Tablet View --------////// */
+.contenttext {
+    padding: 25px;
+    margin-left: 100px;
+    margin-top: auto;
+    font-size: clamp(8px, 500px, 18px)
+}
+
+.about-container{
+    margin-left: 100px;
+}
+
+.linkedin {
+    width: 40px;
+    height: 40px;
+}
+
+.github {
+    width: 40px;
+    height: 40px;
+}
+
+.in-progress {
+    width: 800px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+/* /////------ Contact -Tablet View -----///// */
+
+.contact-form {
+    width: 500px;
+    /* height: 200px; */
+    margin-left:  40px;
+}
+
+.form-control{
+    width: 450px;
+    font-size:clamp(10px, 500px, 15px) 
+}
+
+form .submit{
+    background: #937a8f;
+    border-color: transparent;
+    border-bottom: 5px solid black;
+    color: black;
+    height: 40px;
+    margin-top: 20px;
+    font-size: clamp(10px, 500px, 15px)
+}
+
+.box-contact {
+    margin-top: none;
+    text-align: end;
+    margin-right: 50px;
+}
+
+.about-container-contact{
+    margin-top: none;
+    text-align: end;
+    margin-left: 40px;
+}
+
+.email {
+    font-size: clamp(10px, 500px, 18px);
+
+}
+.imgart {
+    width: 180px;
+    height: 120px;
+    border-radius: 20px;
+ }
+
+
+
+/* ///////------ Blog Section - Tablet View -----//////// */
+
+.block-container_article { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}   
+
+.article_body {
+    margin: 10px;
+    font-size: clamp(25px, 500px, 20px)
+}
+
+ .article-card {
+    display:flex;
+    justify-items: auto;
+    height: 200px;
+    width: 400px;
+ }
+
+ /* ///////// Blog Article Section Descktop View /////// */
+
+.block-container{
+    background-color: white;
+    padding: 50px;
+ }
+ .article-card_in {
+    background-color: white;  
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+ .photo_in{
+    width: 380px;
+    height: 300px;
+    float: left;
+    margin: 10px;
+}
+
+.text-article_in{
+    font-size: clamp(15px, 500px, 25px)
+ }
+
+ .imgart {
+    width: 200px;
+    height: 160px;
+    border-radius: 20px;   
+ }
+
+ .article-date {
+    margin: auto;
+}
+}
 
 
 

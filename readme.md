@@ -4,6 +4,7 @@ https://johannah-portfolio.netlify.app
 
 https://github.com/Johabela/portafolio_joha
 
+https://www.figma.com/file/z4qUvjYCi3NelKEffg2E8d/Johanna-H-Portfolio?node-id=108%3A287
 
 
 ## Description
@@ -73,13 +74,26 @@ The website will start with the follwing four seccions, features and content:
 
 - Desktop View Mockups 
 
+![](img/Desktop_Mockup1.png)
+
 - Desktop View Portfolio 
+
+![](img/Desktop_View1.png)
+
+![](img/Desktop_View2.png)
 
 ## Tablet 
 
 - Tablet View Mockups 
 
+![](img/Tablet_Mockup.png)
+
 - Tablet View Portfolio
+
+![](img/Tablet_View1.png)
+
+![](img/Tablet_View2.png)
+
 
 
 

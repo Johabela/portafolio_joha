@@ -78,7 +78,6 @@ p {
 }
  
 
-
 /* //////............General Header  - Mobile View .........///// */
 
 header a {
@@ -662,17 +661,23 @@ p {
 }
 /* /////// ------- Header - Nav Bar and Logo - Tablet View -------/////////*/
 
+body {
+    height: auto;
+    width: auto;
+
+
+}
 .logo {
         float: left;
-        height: 50px;
-        width: 200px;
-        margin-top: 15px;
+        height: 40px;
+        width: 150px;
+        margin-top: 10px;
         margin-left: 20px;
     }
 
 ul li{
         margin-left: 20px;
-        font-size: 27px;
+        font-size: 25px;
         display: flex;
         justify-content: space-around;
         align-content: right;

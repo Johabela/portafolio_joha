@@ -6,6 +6,8 @@ https://github.com/Johabela/portafolio_joha
 
 https://www.figma.com/file/z4qUvjYCi3NelKEffg2E8d/Johanna-H-Portfolio?node-id=108%3A287
 
+https://vimeo.com/770291113
+
 
 ## Description
 
@@ -20,12 +22,15 @@ My primary target audience is future employers looking for a web developer.
 
 ![](img/sitemap.png)
 
-The website will start with the follwing four seccions, features and content:
+The website will start with the follwing four sections, features and content:
 
 1. Home
-    - **Navegation bar** will be shown across the entire website. 
+    - **Navigation bar** will be shown across the entire website. 
 
-    - **The Logo** is re-used across the website and is clickable, taking the usuers to the homepage.
+    - **The Logo** is re-used across the website and is clickable, taking the users to the homepage.
+
+    -**Photo** of me. 
+    
 
 2. About 
     - **Content with information about me**, showing my professional history, skills and story. 

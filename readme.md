@@ -6,7 +6,6 @@ https://github.com/Johabela/portafolio_joha
 
 https://www.figma.com/file/z4qUvjYCi3NelKEffg2E8d/Johanna-H-Portfolio?node-id=108%3A287
 
-https://vimeo.com/770291113
 
 
 ## Description
